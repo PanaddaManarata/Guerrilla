@@ -28,4 +28,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 
-##  [Look at the one-page]()
+###  [Link to my project](https://panaddamanarata.github.io/Guerrilla/)
