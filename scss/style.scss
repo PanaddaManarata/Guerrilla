@@ -5,7 +5,18 @@
  * Author URL: https://probootstrap.com
  * License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
  */
+
+
 @import 'custom-settings';
+
+
+
+
+
+
+
+
+
 
 html {
 	overflow-x: hidden;
@@ -1645,8 +1656,8 @@ section[data-section="menu"] {
 }
 .probootstrap-heading {
 	.primary-heading {
-		font-family: $font-secondary;
-		color: $brand-primary;
+		font-family: sans-serif
+		color: cadetblue;
 		margin: 0;
 		padding: 0;
 		font-size: 80px;
@@ -1655,7 +1666,7 @@ section[data-section="menu"] {
 		}
 	}
 	.secondary-heading {
-		text-transform: uppercase;
+        font-family: $font-retro; 
 		color: $brand-white;
 		margin: 0;
 		padding: 0;
@@ -1681,6 +1692,9 @@ section[data-section="menu"] {
 		font-weight: 300;
 	}
 }
+
+
+
 .flexslider {
 	position: relative;
 	z-index: 2;

@@ -5,24 +5,33 @@
  * Author URL: https://probootstrap.com
  * License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
  */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", Arial, sans-serif
+}
+
 @font-face {
-    font-family: 'icomoon';
-    src: url("../fonts/icomoon/icomoon.eot?1z9v6x");
-    src: url("../fonts/icomoon/icomoon.eot?1z9v6x#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?1z9v6x") format("truetype"), url("../fonts/icomoon/icomoon.woff?1z9v6x") format("woff"), url("../fonts/icomoon/icomoon.svg?1z9v6x#icomoon") format("svg");
-    font-weight: normal;
-    font-style: normal;
+    font-family: icomoon;
+    src: url(../fonts/icomoon/icomoon.eot?1z9v6x);
+    src: url(../fonts/icomoon/icomoon.eot?1z9v6x#iefix) format("embedded-opentype"), url(../fonts/icomoon/icomoon.ttf?1z9v6x) format("truetype"), url(../fonts/icomoon/icomoon.woff?1z9v6x) format("woff"), url(../fonts/icomoon/icomoon.svg?1z9v6x#icomoon) format("svg");
+    font-weight: 400;
+    font-style: normal
 }
 
 html {
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 body {
     background: #E4E4E4;
     color: #8b8e94;
     line-height: 24px;
-    font-size: 15px;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px
 }
 
 h1,
@@ -31,49 +40,45 @@ h3,
 h4,
 h5,
 h6 {
-    color: #000000;
-    line-height: 1.5;
-    font-family: "Open Sans", Arial, sans-serif;
+    color: #000;
+    line-height: 1.5
 }
 
 h1 {
-    font-size: 46px;
+    font-size: 46px
 }
 
-h2 {
-    font-size: 36px;
+h2,
+h4 {
+    font-size: 36px
 }
 
 h3 {
-    font-size: 28px;
-}
-
-h4 {
-    font-size: 36px;
+    font-size: 28px
 }
 
 h5,
 h6 {
-    font-size: 14px;
+    font-size: 14px
 }
 
+ol,
 p,
-ul,
-ol {
-    margin-bottom: 30px;
+ul {
+    margin-bottom: 30px
 }
 
 a {
     -webkit-transition: .3s all;
     transition: .3s all;
-    color: #FFA33E;
+    color: #FFA33E
 }
 
-a:hover,
+a:active,
 a:focus,
-a:active {
+a:hover {
     color: #ff9725;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .hero-text-heading,
@@ -83,149 +88,139 @@ a:active {
     margin-bottom: 10px;
     margin-top: 0;
     line-height: 64px;
-    color: white;
+    color: #fff
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
 
     .hero-text-heading,
     .probootstrap-hero h1 {
         font-size: 40px;
-        line-height: 1.5;
+        line-height: 1.5
     }
 }
 
-@media screen and (max-width: 480px) {
+.probootstrap-navbar .dropdown-submenu > a:before,
+.probootstrap-navbar .dropdown > a:before {
+    font-family: icomoon;
+    line-height: 1;
+    font-weight: 400;
+    speak: none;
+    font-style: normal;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+@media screen and (max-width:480px) {
 
     .hero-text-heading,
     .probootstrap-hero h1 {
-        font-size: 30px;
+        font-size: 30px
     }
 }
 
 .hero-text-subheading,
 .probootstrap-hero p {
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, .9)
 }
 
 .hero-text-subheading:last-child,
 .probootstrap-hero p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
 .probootstrap-navbar {
     border: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-radius: 0px;
-    margin-bottom: 0px;
-    background: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    background: 0 0;
     -webkit-transition: .3s all;
-    transition: .3s all;
+    transition: .3s all
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .probootstrap-navbar {
-        background: white;
-        -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1)
     }
 }
 
 .probootstrap-navbar .navbar-toggle:focus,
 .probootstrap-navbar .navbar-toggle:hover {
-    background-color: transparent;
+    background-color: transparent
 }
 
 .probootstrap-navbar .navbar-toggle {
-    border: none;
+    border: none
 }
 
 .probootstrap-navbar .navbar-toggle span.icon-bar {
-    -webkit-transition: all 0.15s;
-    transition: all 0.15s;
+    -webkit-transition: all .15s;
+    transition: all .15s
 }
 
 .probootstrap-navbar .navbar-toggle span:nth-child(2) {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transform-origin: 10% 10%;
-    transform-origin: 10% 10%;
+    transform-origin: 10% 10%
 }
 
 .probootstrap-navbar .navbar-toggle span:nth-child(3) {
-    opacity: 0;
+    opacity: 0
 }
 
 .probootstrap-navbar .navbar-toggle span:nth-child(4) {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-transform-origin: 10% 90%;
-    transform-origin: 10% 90%;
+    transform-origin: 10% 90%
 }
 
 .probootstrap-navbar .navbar-toggle.collapsed span:nth-child(2),
 .probootstrap-navbar .navbar-toggle.collapsed span:nth-child(4) {
     -webkit-transform: rotate(0);
-    transform: rotate(0);
+    transform: rotate(0)
 }
 
 .probootstrap-navbar .navbar-toggle.collapsed span:nth-child(3) {
-    opacity: 1;
+    opacity: 1
 }
 
-.probootstrap-navbar .parent-nav-link-padding,
 .probootstrap-navbar .navbar-brand,
-.probootstrap-navbar .navbar-nav > li > a {
-    padding-top: 54px;
-    padding-bottom: 54px;
-    padding-left: 0;
-    padding-right: 0;
+.probootstrap-navbar .navbar-nav > li > a,
+.probootstrap-navbar .parent-nav-link-padding {
     margin-left: 15px;
     margin-right: 15px;
-}
-
-@media screen and (max-width: 768px) {
-
-    .probootstrap-navbar .parent-nav-link-padding,
-    .probootstrap-navbar .navbar-brand,
-    .probootstrap-navbar .navbar-nav > li > a {
-        padding-top: 15px !important;
-        padding-bottom: 15px !important;
-    }
+    padding: 54px 0
 }
 
 .probootstrap-navbar .dropdown-header {
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, .2);
     padding-left: 10px;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 .probootstrap-navbar .dropdown > a {
     padding-right: 10px !important;
     position: relative;
-    display: block;
+    display: block
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px) {
     .probootstrap-navbar .dropdown > a {
         display: block;
-        padding-right: 0px;
+        padding-right: 0
     }
 }
 
 .probootstrap-navbar .dropdown > a:before {
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
     text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     position: absolute;
     top: 50%;
     right: 0;
@@ -233,105 +228,106 @@ a:active {
     margin-top: -11px;
     content: "\e924";
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, .5);
     -webkit-transition: .3s all;
-    transition: .3s all;
+    transition: .3s all
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
+
+    .probootstrap-navbar .navbar-brand,
+    .probootstrap-navbar .navbar-nav > li > a,
+    .probootstrap-navbar .parent-nav-link-padding {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important
+    }
+
     .probootstrap-navbar .dropdown > a:before {
-        color: rgba(0, 0, 0, 0.2);
+        color: rgba(0, 0, 0, .2)
     }
 }
 
 .probootstrap-navbar .dropdown > a:hover:before {
     -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    transform: rotate(180deg)
 }
 
 .probootstrap-navbar .dropdown.open > a,
-.probootstrap-navbar .dropdown:hover > a,
+.probootstrap-navbar .dropdown:active > a,
 .probootstrap-navbar .dropdown:focus > a,
-.probootstrap-navbar .dropdown:active > a {
+.probootstrap-navbar .dropdown:hover > a {
     -webkit-transition: .3s all;
-    transition: .3s all;
+    transition: .3s all
 }
 
 .probootstrap-navbar .dropdown.open > a:before,
-.probootstrap-navbar .dropdown:hover > a:before,
+.probootstrap-navbar .dropdown:active > a:before,
 .probootstrap-navbar .dropdown:focus > a:before,
-.probootstrap-navbar .dropdown:active > a:before {
+.probootstrap-navbar .dropdown:hover > a:before {
     -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    transform: rotate(180deg)
 }
 
 .probootstrap-navbar .dropdown > .dropdown-menu > li a {
     padding: 10px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, .8)
 }
 
-.probootstrap-navbar .dropdown > .dropdown-menu > li a:hover {
-    border-top: none;
-    background: #ffffff;
-    color: #85C8DD;
-}
-
+.probootstrap-navbar .dropdown > .dropdown-menu > li a:hover,
 .probootstrap-navbar .dropdown > .dropdown-menu > li.open > a,
-.probootstrap-navbar .dropdown > .dropdown-menu > li:hover > a,
+.probootstrap-navbar .dropdown > .dropdown-menu > li:active > a,
 .probootstrap-navbar .dropdown > .dropdown-menu > li:focus > a,
-.probootstrap-navbar .dropdown > .dropdown-menu > li:active > a {
-    border-top: none;
+.probootstrap-navbar .dropdown > .dropdown-menu > li:hover > a {
     color: #85C8DD;
-    background: #ffffff;
+    background: #fff;
+    border-top: none
 }
 
 .probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu.open > a,
-.probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:hover > a,
+.probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:active > a,
 .probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:focus > a,
-.probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:active > a {
-    border-top: none;
+.probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:hover > a {
+    border-top: none
 }
 
 .probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu.open > a:before,
-.probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:hover > a:before,
+.probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:active > a:before,
 .probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:focus > a:before,
-.probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:active > a:before {
-    color: #000000;
+.probootstrap-navbar .dropdown > .dropdown-menu > li.dropdown-submenu:hover > a:before {
+    color: #000
 }
 
 .probootstrap-navbar .dropdown > .dropdown-menu > li.active > a {
-    color: #ffffff;
+    color: #fff
 }
 
 .probootstrap-navbar .navbar-right .dropdown-menu {
-    right: auto;
+    right: auto
 }
 
 .probootstrap-navbar .dropdown-menu {
     border: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
     background: #85C8DD;
     border-radius: 0;
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, .15);
     min-width: 200px;
     white-space: normal;
-    word-wrap: break-word;
+    word-wrap: break-word
 }
 
 .probootstrap-navbar .dropdown-menu a {
-    white-space: normal;
+    white-space: normal
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .probootstrap-navbar .dropdown-menu {
         width: 100%;
-        padding: 10px 15px;
+        padding: 10px 15px
     }
 
     .probootstrap-navbar .dropdown-menu a {
-        color: #ffffff;
+        color: #fff
     }
 }
 
@@ -340,109 +336,95 @@ a:active {
     padding-bottom: 0 !important;
     font-size: 30px;
     text-transform: uppercase;
-    background: no-repeat left top;
+    background: url(../img/) left top no-repeat;
     top: 40px;
     position: relative;
     width: 117px;
     height: 40px;
-    color: white;
     text-indent: -999999px;
     -webkit-transition: .2s all;
-    transition: .2s all;
+    transition: .2s all
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .probootstrap-navbar .navbar-brand {
         top: 5px !important;
-        background-position: left 100%;
+        background-position: left 100%
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px) {
     .probootstrap-navbar .navbar-brand {
-        top: 6px !important;
+        top: 6px !important
     }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min--moz-device-pixel-ratio:2),
+only screen and (min-device-pixel-ratio:2),
+only screen and (min-resolution:192dpi),
+only screen and (min-resolution:2dppx) {
     .probootstrap-navbar .navbar-brand {
         position: relative;
         width: 117px;
         height: 40px;
-        background: url(../img/logo@2x.png) no-repeat left 100%;
-        background-size: cover;
+        background: url(../img/logo@2x.png) left 100% no-repeat;
+        background-size: cover
     }
 }
 
 .probootstrap-navbar .navbar-nav > li > a {
-    color: white;
+    color: #fff;
     font-size: 15px;
     position: relative;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .probootstrap-navbar .navbar-nav > li > a {
         padding-top: 8px;
         padding-bottom: 8px;
-        color: rgba(0, 0, 0, 0.7);
+        color: rgba(0, 0, 0, .7)
     }
 }
 
-.probootstrap-navbar .navbar-nav > li > a:hover {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.probootstrap-navbar .navbar-nav > li > a:hover,
+.probootstrap-navbar .navbar-nav > li > a:active,
 .probootstrap-navbar .navbar-nav > li > a:focus,
-.probootstrap-navbar .navbar-nav > li > a:active {
-    color: rgba(255, 255, 255, 0.7);
+.probootstrap-navbar .navbar-nav > li > a:hover {
+    color: rgba(255, 255, 255, .7)
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
 
-    .probootstrap-navbar .navbar-nav > li > a:hover,
+    .probootstrap-navbar .navbar-nav > li > a:active,
     .probootstrap-navbar .navbar-nav > li > a:focus,
-    .probootstrap-navbar .navbar-nav > li > a:active {
-        color: rgba(0, 0, 0, 0.7);
+    .probootstrap-navbar .navbar-nav > li > a:hover {
+        color: rgba(0, 0, 0, .7)
     }
 }
 
-.probootstrap-navbar .navbar-nav > li.open > a:hover,
+.probootstrap-navbar .navbar-nav > li.open > a,
 .probootstrap-navbar .navbar-nav > li.open > a:focus,
-.probootstrap-navbar .navbar-nav > li.open > a {
-    background: none;
+.probootstrap-navbar .navbar-nav > li.open > a:hover {
+    background: 0 0
 }
 
 .probootstrap-navbar .navbar-nav > li.active > a {
-    background: none;
-    color: #ffffff;
+    background: 0 0;
+    color: #fff
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .probootstrap-navbar .navbar-nav > li.active > a {
-        color: rgba(0, 0, 0, 0.7);
+        color: rgba(0, 0, 0, .7)
     }
 }
 
 .probootstrap-navbar .navbar-nav > li.active > a:active,
 .probootstrap-navbar .navbar-nav > li.active > a:focus,
 .probootstrap-navbar .navbar-nav > li.active > a:hover {
-    background: none;
-    color: #ffffff;
-}
-
-@media screen and (max-width: 768px) {
-
-    .probootstrap-navbar .navbar-nav > li.active > a:active,
-    .probootstrap-navbar .navbar-nav > li.active > a:focus,
-    .probootstrap-navbar .navbar-nav > li.active > a:hover {
-        color: rgba(0, 0, 0, 0.7);
-    }
+    background: 0 0;
+    color: #fff
 }
 
 .probootstrap-navbar .navbar-nav > li > .dropdown-menu:before {
@@ -454,48 +436,46 @@ only screen and (min-resolution: 2dppx) {
     border-color: rgba(133, 200, 221, 0);
     border-bottom-color: #85C8DD;
     border-width: 10px;
-    margin-left: -10px;
+    margin-left: -10px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
+
+    .probootstrap-navbar .navbar-nav > li.active > a:active,
+    .probootstrap-navbar .navbar-nav > li.active > a:focus,
+    .probootstrap-navbar .navbar-nav > li.active > a:hover {
+        color: rgba(0, 0, 0, .7)
+    }
+
     .probootstrap-navbar .navbar-nav > li > .dropdown-menu:before {
-        display: none;
+        display: none
     }
 }
 
 .probootstrap-navbar .navbar-nav .dropdown li.active > a {
-    background: none;
+    background: 0 0
 }
 
 .probootstrap-navbar .navbar-nav.active > a {
-    color: #FFA33E !important;
+    color: #FFA33E !important
 }
 
 .probootstrap-navbar .dropdown-submenu {
-    position: relative;
+    position: relative
 }
 
 .probootstrap-navbar .dropdown-submenu .dropdown-menu {
     top: 0;
     left: 100%;
-    margin-top: -1px;
+    margin-top: -1px
 }
 
 .probootstrap-navbar .dropdown-submenu > a {
-    display: block;
+    display: block
 }
 
 .probootstrap-navbar .dropdown-submenu > a:before {
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
     text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     position: absolute;
     top: 50%;
     right: 0;
@@ -503,93 +483,75 @@ only screen and (min-resolution: 2dppx) {
     margin-top: -11px;
     content: "\e926";
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, .5);
     -webkit-transition: .3s all;
-    transition: .3s all;
+    transition: .3s all
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .probootstrap-navbar .dropdown-submenu > a:before {
-        color: rgba(0, 0, 0, 0.2);
+        color: rgba(0, 0, 0, .2)
     }
 }
 
 .probootstrap-navbar .dropdown-submenu > a:hover:before {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, .3);
     -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-@media screen and (max-width: 480px) {
-    .probootstrap-navbar .dropdown-submenu:hover > .dropdown-menu {
-        display: block;
-    }
+    transform: rotate(180deg)
 }
 
 .probootstrap-navbar.scrolled {
-    background: #ffffff;
-    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .09);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .09)
 }
 
-.probootstrap-navbar.scrolled .parent-nav-link-padding,
 .probootstrap-navbar.scrolled .navbar-brand,
-.probootstrap-navbar.scrolled .navbar-nav > li > a {
+.probootstrap-navbar.scrolled .navbar-nav > li > a,
+.probootstrap-navbar.scrolled .parent-nav-link-padding {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 20px
 }
 
 .probootstrap-navbar.scrolled .navbar-brand {
     top: 10px;
-    background-position: left 100%;
+    background-position: left 100%
 }
 
 .probootstrap-navbar.scrolled .dropdown > a:before {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, .4)
 }
 
 .probootstrap-navbar.scrolled .navbar-nav > li > a {
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, .7)
 }
 
 .probootstrap-navbar.scrolled .navbar-nav > li > a:hover {
-    color: rgba(0, 0, 0, 0.7) !important;
+    color: rgba(0, 0, 0, .7) !important
 }
 
 .probootstrap-navbar.scrolled .navbar-nav > li.active > a {
-    color: #FFA33E !important;
-}
-
-@media screen and (max-width: 768px) {
-    .probootstrap-navbar.scrolled .navbar-nav > li.active > a {
-        color: #FFA33E !important;
-    }
+    color: #FFA33E !important
 }
 
 .container-fluid .navbar-brand {
-    margin-left: 15px;
+    margin-left: 15px
 }
 
 .container-fluid .dropdown-submenu {
-    position: relative;
+    position: relative
 }
 
 .container-fluid .dropdown-submenu .dropdown-menu {
     top: 0;
     left: auto;
     right: 100%;
-    margin-top: -1px;
-}
-
-@media screen and (max-width: 480px) {
-    .container-fluid .dropdown-submenu:hover > .dropdown-menu {
-        display: block;
-    }
+    margin-top: -1px
 }
 
 .probootstrap-hero {
     background-size: cover;
-    background-position: center center;
+    background-position: center center
 }
 
 .probootstrap-hero > .overlay {
@@ -598,79 +560,90 @@ only screen and (min-resolution: 2dppx) {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    background: rgba(0, 0, 0, .3);
+    z-index: 1
+}
+
+.btn.btn-primary,
+.probootstrap-hero.probootstrap-hero-colored {
+    background: #FFA33E
 }
 
 .probootstrap-hero > .container {
     position: relative;
-    z-index: 2;
+    z-index: 2
 }
 
 .probootstrap-hero .probootstrap-hero-text {
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 200px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
+    .probootstrap-navbar.scrolled .navbar-nav > li.active > a {
+        color: #FFA33E !important
+    }
+
     .probootstrap-hero .probootstrap-hero-text {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 50px
     }
 }
 
 .probootstrap-hero.probootstrap-sm-hero .probootstrap-hero-text {
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 150px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .probootstrap-hero.probootstrap-sm-hero .probootstrap-hero-text {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 50px
     }
 }
 
 .probootstrap-hero.probootstrap-xs-hero .probootstrap-hero-text {
     padding-top: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 90px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .probootstrap-hero.probootstrap-xs-hero .probootstrap-hero-text {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 50px
     }
 }
 
 .probootstrap-hero .btn {
     position: relative;
     font-size: 18px;
-    width: 200px;
+    width: 200px
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px) {
+
+    .container-fluid .dropdown-submenu:hover > .dropdown-menu,
+    .probootstrap-navbar .dropdown-submenu:hover > .dropdown-menu {
+        display: block
+    }
+
     .probootstrap-hero .btn {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 }
 
 .probootstrap-hero .btn.btn-primary {
     text-transform: uppercase;
-    padding: 15px 20px;
-}
-
-.probootstrap-hero.probootstrap-hero-colored {
-    background: #FFA33E;
+    padding: 15px 20px
 }
 
 .probootstrap-hero.probootstrap-hero-colored h1 {
-    color: white;
+    color: #fff
 }
 
 .probootstrap-hero.probootstrap-hero-colored p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, .8)
 }
 
 .btn {
@@ -678,96 +651,93 @@ only screen and (min-resolution: 2dppx) {
     border-radius: 30px;
     text-transform: uppercase;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 30px
 }
 
 .btn:active {
     -webkit-transition: .2s all;
     transition: .2s all;
-    -webkit-transform: scale(0.95);
-    transform: scale(0.95);
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
     -webkit-box-shadow: none;
-    box-shadow: none;
+    box-shadow: none
 }
 
 .btn.btn-lg {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.5
 }
 
 .btn.btn-primary {
     border: 1px solid #FFA33E;
-    background: #FFA33E;
-    color: #ffffff;
+    color: #fff
 }
 
-.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
+    background: #ffa848
+}
+
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
-    background: #ffa848;
-}
-
-.btn.btn-primary:focus,
-.btn.btn-primary:active {
-    outline: none;
-    border: 1px solid #FFA33E;
+    outline: 0;
+    border: 1px solid #FFA33E
 }
 
 .btn.btn-ghost {
-    background: transparent;
+    background: 0 0;
     border: 1px solid #FFA33E;
-    color: #FFA33E;
+    color: #FFA33E
 }
 
 .btn.btn-ghost:hover {
     background: #FFA33E;
-    color: #ffffff;
+    color: #fff
 }
 
-.btn.btn-ghost:focus,
-.btn.btn-ghost:active {
-    outline: none;
-    background: transparent;
+.btn.btn-ghost:active,
+.btn.btn-ghost:focus {
+    outline: 0;
+    background: 0 0;
     color: #FFA33E;
-    border: 1px solid #FFA33E;
+    border: 1px solid #FFA33E
 }
 
-section[data-section="menu"] {
+section[data-section=menu] {
     position: relative;
     margin-top: -140px;
-    z-index: -1;
-}
-
-@media screen and (max-width: 768px) {
-    section[data-section="menu"] {
-        margin-top: 0;
-    }
+    z-index: -1
 }
 
 .probootstrap-section {
-    padding: 7em 0;
+    padding: 7em 0
 }
 
 .probootstrap-section.probootstrap-border-top {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, .1)
 }
 
 .probootstrap-section.probootstrap-border-bottom {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
 }
 
 .probootstrap-section > .container.probootstrap-border-top {
     padding-top: 50px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, .1)
 }
 
 .probootstrap-section.probootstrap-bg-white {
-    background: #ffffff;
+    background: #fff
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
+    section[data-section=menu] {
+        margin-top: 0
+    }
+
     .probootstrap-section {
-        padding: 3em 0;
+        padding: 3em 0
     }
 }
 
@@ -776,174 +746,163 @@ section[data-section="menu"] {
     background-repeat: no-repeat;
     padding: 7em 0;
     position: relative;
-    height: 600px;
-}
-
-@media screen and (max-width: 768px) {
-    .probootstrap-section-bg {
-        padding: 3em 0;
-        height: 300px;
-    }
+    height: 600px
 }
 
 .probootstrap-section-bg.overlay:before {
     content: "";
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, .2);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0
 }
 
 .probootstrap-section-bg .probootstrap-heading {
-    margin-top: 250px;
+    margin-top: 250px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
+    .probootstrap-section-bg {
+        padding: 3em 0;
+        height: 300px
+    }
+
     .probootstrap-section-bg .probootstrap-heading {
-        margin-top: 50px;
+        margin-top: 50px
     }
 }
 
 .probootstrap-footer {
-    background-size: cover;
-    background: #000000;
+    background: #000;
     padding: 7em 0;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-@media screen and (max-width: 768px) {
-    .probootstrap-footer {
-        padding: 2em 0;
-    }
+    color: rgba(255, 255, 255, .7)
 }
 
 .probootstrap-footer h3 {
     font-size: 18px;
     letter-spacing: .2em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fff
 }
 
 .probootstrap-footer .probootstrap-footer-widget {
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
+    .probootstrap-footer {
+        padding: 2em 0
+    }
+
     .probootstrap-footer .probootstrap-footer-widget {
-        margin-bottom: 20px;
+        margin-bottom: 20px
     }
 }
 
 .probootstrap-copyright {
     background: #262626;
-    padding: 20px 0;
+    padding: 20px 0
 }
 
 .probootstrap-copyright a {
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, .2)
 }
 
 .probootstrap-copyright a:hover {
-    color: white;
+    color: #fff
 }
 
 .probootstrap-copyright p {
-    font-size: 14px;
+    font-size: 14px
 }
 
 .probootstrap-copyright p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .probootstrap-copyright p.copyright-text {
-        margin-bottom: 20px;
+        margin-bottom: 20px
     }
 }
 
 .probootstrap-footer-social {
     padding: 0;
-    margin: 0;
+    margin: 0
 }
 
 .probootstrap-footer-social.right {
-    text-align: right;
-}
-
-@media screen and (max-width: 768px) {
-    .probootstrap-footer-social.right {
-        text-align: left;
-    }
+    text-align: right
 }
 
 .probootstrap-footer-social li {
     display: inline;
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style: none
 }
 
 .probootstrap-footer-social li a {
     padding: 10px;
-    font-size: 22px;
+    font-size: 22px
 }
 
 .probootstrap-footer-social li:first-child > a {
-    padding-left: 0;
+    padding-left: 0
 }
 
 .probootstrap-block-image {
-    background: #ffffff;
-    margin-bottom: 30px;
+    background: #fff;
+    margin-bottom: 30px
 }
 
 .probootstrap-block-image figure img {
-    max-width: 100%;
+    max-width: 100%
 }
 
 .probootstrap-block-image .text {
-    padding: 20px;
+    padding: 20px
 }
 
 .probootstrap-block-image .text .date {
     display: block;
-    color: #999999;
+    color: #999;
     font-size: 12px;
     letter-spacing: .2em;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 .probootstrap-block-image .text h3 {
-    margin: 0 0 10px 0;
-    font-size: 20px;
+    margin: 0 0 10px;
+    font-size: 20px
 }
 
 .probootstrap-block-image .text h3 a {
-    color: #000000;
+    color: #000
 }
 
 .probootstrap-block-image .text h3 a:hover {
-    color: #FFA33E;
+    color: #FFA33E
 }
 
 .probootstrap-block-image .text p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
 .probootstrap-custom-link {
     font-size: 16px;
     text-transform: uppercase;
-    color: #000000;
+    color: #000;
     display: inline-block;
     text-decoration: none;
     position: relative;
-    padding-bottom: 5px;
+    padding-bottom: 5px
 }
 
 .probootstrap-custom-link.link-sm {
-    font-size: 14px;
+    font-size: 14px
 }
 
 .probootstrap-custom-link:before {
@@ -956,7 +915,7 @@ section[data-section="menu"] {
     bottom: 0;
     z-index: 2;
     -webkit-transition: width .5s;
-    transition: width .5s;
+    transition: width .5s
 }
 
 .probootstrap-custom-link:after {
@@ -967,27 +926,27 @@ section[data-section="menu"] {
     display: block;
     width: 100%;
     height: 2px;
-    background: #000;
+    background: #000
 }
 
 .probootstrap-custom-link:hover {
-    color: #000000;
+    color: #000
 }
 
 .probootstrap-custom-link:hover:before {
     width: 100%;
-    background: #FFA33E;
+    background: #FFA33E
 }
 
 .image-wrap {
     overflow: hidden;
-    position: relative;
+    position: relative
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px) {
     .image-wrap {
         width: 100%;
-        height: 200px;
+        height: 200px
     }
 }
 
@@ -996,57 +955,51 @@ section[data-section="menu"] {
     left: 50%;
     top: 50%;
     -webkit-transform: translateY(-50%) translateX(-50%);
-    transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%)
 }
 
 .image-wrap .image-bg img {
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100%
 }
 
 .menus {
     padding: 0;
-    margin: 0;
+    margin: 0
 }
 
 .menus li {
     padding: 0;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
     list-style: none;
     display: block;
-    position: relative;
+    position: relative
 }
 
 .menus li .image,
 .menus li .text {
     display: table-cell;
-    vertical-align: top;
+    vertical-align: top
 }
 
 .menus li .image {
-    width: 80px;
+    width: 80px
 }
 
 .menus li .image img {
     max-width: 100%;
-    border-radius: 50%;
+    border-radius: 50%
 }
 
 .menus li .text {
-    padding-left: 20px;
+    padding-left: 20px
 }
 
 .menus li .text h3 {
-    margin: 15px 0 0px 0;
+    margin: 15px 0 0;
     font-size: 18px;
     text-transform: uppercase;
-    color: #000000;
-}
-
-@media screen and (max-width: 768px) {
-    .menus li .text h3 {
-        margin-top: 0px;
-    }
+    color: #000
 }
 
 .menus li .text .price {
@@ -1054,15 +1007,23 @@ section[data-section="menu"] {
     top: 15px;
     right: 0;
     font-size: 20px;
-    color: #FFA33E;
+    color: #FFA33E
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
+    .probootstrap-footer-social.right {
+        text-align: left
+    }
+
+    .menus li .text h3 {
+        margin-top: 0
+    }
+
     .menus li .text .price {
-        top: 0px;
+        top: 0;
         position: relative;
         display: block;
-        margin-bottom: 0px;
+        margin-bottom: 0
     }
 }
 
@@ -1075,346 +1036,334 @@ section[data-section="menu"] {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: -13%;
-    position: relative;
+    position: relative
 }
 
 .probootstrap-cell-retro .half {
     width: 50%;
-    float: left;
+    float: left
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .probootstrap-cell-retro .half {
         width: 100%;
-        margin-top: 0;
+        margin-top: 0
     }
 }
 
 .probootstrap-cell {
-    background: #ffffff;
+    background: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    position: relative;
+    position: relative
+}
+
+.modal .probootstrap-modal-flex .probootstrap-modal-figure,
+.probootstrap-cell .image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
 }
 
 .probootstrap-cell .image,
 .probootstrap-cell .text {
-    width: 50%;
+    width: 50%
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width:992px) {
 
     .probootstrap-cell .image,
     .probootstrap-cell .text {
-        width: 100%;
+        width: 100%
     }
-}
 
-.probootstrap-cell .image {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 992px) {
     .probootstrap-cell .image {
-        height: 200px;
+        height: 200px
     }
 }
 
 .probootstrap-cell .text {
     padding: 40px;
-    position: relative;
+    position: relative
 }
 
 .probootstrap-cell .text h3 {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
     font-size: 18px;
     text-transform: uppercase;
-    color: #000000;
+    color: #000
+}
+
+.probootstrap-cell .text:before,
+.probootstrap-cell.reverse .text:before {
+    z-index: 22;
+    top: 15%;
+    content: " ";
+    height: 0;
+    margin-top: -12px;
+    pointer-events: none
 }
 
 .probootstrap-cell .text p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
 .probootstrap-cell .text p.price {
     font-size: 20px;
-    color: #FFA33E;
+    color: #FFA33E
 }
 
 .probootstrap-cell .text:before {
-    z-index: 22;
     right: 100%;
-    top: 15%;
     border: solid transparent;
-    content: " ";
-    height: 0;
     width: 0;
     position: absolute;
-    pointer-events: none;
     border-color: rgba(255, 225, 255, 0);
-    border-right-color: #ffffff;
-    border-width: 12px;
-    margin-top: -12px;
-}
-
-@media screen and (max-width: 768px) {
-    .probootstrap-cell .text:before {
-        display: none;
-    }
+    border-right-color: #fff;
+    border-width: 12px
 }
 
 .probootstrap-cell.reverse .image {
     position: absolute;
     right: 0;
     width: 50%;
-    min-height: 100%;
+    min-height: 100%
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width:992px) {
     .probootstrap-cell.reverse .image {
         position: relative;
-        width: 100%;
+        width: 100%
     }
 }
 
 .probootstrap-cell.reverse .text:before {
-    z-index: 22;
     left: 100%;
-    top: 15%;
     border: solid transparent;
-    content: " ";
-    height: 0;
     width: 0;
     position: absolute;
-    pointer-events: none;
     border-color: rgba(255, 225, 255, 0);
-    border-left-color: #ffffff;
-    border-width: 12px;
-    margin-top: -12px;
+    border-left-color: #fff;
+    border-width: 12px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
+
+    .probootstrap-cell .text:before,
     .probootstrap-cell.reverse .text:before {
-        display: none;
+        display: none
     }
 }
 
 .probootstrap-gallery {
     width: 100%;
-    float: left;
+    float: left
 }
 
 .probootstrap-gallery figure {
     display: block;
-    float: left;
     width: 32%;
     margin-right: 2%;
     float: left;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .probootstrap-gallery figure:nth-of-type(3n+3) {
-    margin-right: 0;
+    margin-right: 0
 }
 
 .probootstrap-gallery figure figcaption {
-    display: none;
+    display: none
 }
 
 .probootstrap-gallery img {
     width: 100%;
-    height: auto;
+    height: auto
 }
 
 .probootstrap-gallery.four-col figure {
     width: 23.5%;
     margin-right: 2%;
-    float: left;
+    float: left
 }
 
 .probootstrap-gallery.four-col figure:nth-of-type(4n+4) {
-    margin-right: 0;
+    margin-right: 0
 }
 
 .probootstrap-gallery.three-col figure {
     width: 32%;
     margin-right: 2%;
-    float: left;
+    float: left
 }
 
 .probootstrap-gallery.three-col figure:nth-of-type(3n+3) {
-    margin-right: 0;
+    margin-right: 0
 }
 
 .probootstrap-gallery.two-col figure {
     width: 49%;
     margin-right: 2%;
-    float: left;
+    float: left
 }
 
 .probootstrap-gallery.two-col figure:nth-of-type(2n+2) {
-    margin-right: 0;
+    margin-right: 0
 }
 
 .grid-item {
-    float: left;
+    float: left
 }
 
 .gutter-sizer {
-    width: 2%;
+    width: 2%
 }
 
 .isotope .isotope-item {
-    -webkit-transition-duration: 0.6s;
-    transition-duration: 0.6s;
-}
-
-.isotope .isotope-item {
+    -webkit-transition-duration: .6s;
+    transition-duration: .6s;
     -webkit-transition-property: -webkit-transform, opacity;
     -webkit-transition-property: opacity, -webkit-transform;
     transition-property: opacity, -webkit-transform;
     transition-property: transform, opacity;
-    transition-property: transform, opacity, -webkit-transform;
+    transition-property: transform, opacity, -webkit-transform
 }
 
 .grid-item,
 .grid-sizer {
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
 .grid-item img,
 .grid-sizer img {
     max-width: 100%;
-    margin-bottom: 0px;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
+    margin-bottom: 0;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out
 }
 
 .two-cols .grid-item,
 .two-cols .grid-sizer {
-    width: 49%;
+    width: 49%
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
 
     .two-cols .grid-item,
     .two-cols .grid-sizer {
-        width: 49%;
+        width: 49%
     }
 }
 
-@media screen and (max-width: 768px) and (max-width: 992px) {
+@media screen and (max-width:768px) and (max-width:992px) {
 
     .two-cols .grid-item img,
     .two-cols .grid-sizer img {
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 }
 
-@media screen and (max-width: 768px) and (max-width: 768px) {
+@media screen and (max-width:768px) and (max-width:768px) {
 
     .two-cols .grid-item img,
     .two-cols .grid-sizer img {
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px) {
 
     .two-cols .grid-item,
     .two-cols .grid-sizer {
         width: 100%;
         margin-left: 0;
-        margin-right: 0;
+        margin-right: 0
     }
 }
 
 .three-cols .grid-item,
 .three-cols .grid-sizer {
-    width: 32%;
+    width: 32%
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
 
     .three-cols .grid-item,
     .three-cols .grid-sizer {
         width: 48%;
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px) {
 
     .three-cols .grid-item,
     .three-cols .grid-sizer {
         width: 100%;
         margin-left: 0;
-        margin-right: 0;
+        margin-right: 0
     }
 }
 
 .four-cols .grid-item,
 .four-cols .grid-sizer {
-    width: 23.5%;
+    width: 23.5%
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
 
     .four-cols .grid-item,
     .four-cols .grid-sizer {
         width: 32%;
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px) {
 
     .four-cols .grid-item,
     .four-cols .grid-sizer {
         width: 100%;
         margin-left: 0;
-        margin-right: 0;
+        margin-right: 0
     }
 }
 
 .probootstrap-gallery-item {
     padding: 0;
-    margin: 0;
+    margin: 0 0 20px;
     list-style: none;
     float: left;
-    margin-bottom: 20px;
     cursor: pointer;
-    position: relative;
+    position: relative
 }
 
 .probootstrap-gallery-item img {
     max-width: 100%;
     -webkit-transition: .3s all;
-    transition: .3s all;
+    transition: .3s all
 }
 
 .probootstrap-gallery-item a {
     display: block;
     float: left;
-    width: 100%;
+    width: 100%
 }
 
 .probootstrap-gallery-item:hover img {
-    opacity: .7;
+    opacity: .7
 }
 
 .probootstrap-form {
-    margin-bottom: 50px;
+    margin-bottom: 50px
 }
 
 .probootstrap-form label {
-    font-weight: normal;
+    font-weight: 400
 }
 
 .probootstrap-form .form-control {
@@ -1424,18 +1373,18 @@ section[data-section="menu"] {
     font-size: 14px;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
+    appearance: none
 }
 
 .probootstrap-form .form-control:active,
 .probootstrap-form .form-control:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-color: #FFA33E;
+    border-color: #FFA33E
 }
 
 .probootstrap-form .form-group .form-field {
-    position: relative;
+    position: relative
 }
 
 .probootstrap-form .form-group .form-field .icon {
@@ -1443,31 +1392,29 @@ section[data-section="menu"] {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 20px;
+    right: 20px
 }
 
 .probootstrap-form .form-group .form-field .form-control {
-    padding-right: 50px;
+    padding-right: 50px
 }
 
 .probootstrap-form textarea.form-control {
     height: inherit;
-    resize: vertical;
+    resize: vertical
 }
 
 .probootstrap-animate {
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden
 }
 
 .modal .modal-content {
-    -webkit-box-shadow: none;
-    box-shadow: none;
     border-radius: 0;
     border: none;
     position: relative;
-    -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, .2)
 }
 
 .modal .modal-content .close {
@@ -1475,14 +1422,7 @@ section[data-section="menu"] {
     top: 10px;
     right: 10px;
     z-index: 100;
-    font-size: 26px;
-}
-
-@media screen and (max-width: 480px) {
-    .modal .modal-content .close {
-        top: 20px;
-        right: 20px;
-    }
+    font-size: 26px
 }
 
 .modal .probootstrap-modal-flex {
@@ -1490,69 +1430,58 @@ section[data-section="menu"] {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .modal .probootstrap-modal-flex .probootstrap-modal-figure {
-    width: 40%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 480px) {
-    .modal .probootstrap-modal-flex .probootstrap-modal-figure {
-        height: 200px;
-    }
+    width: 40%
 }
 
 .modal .probootstrap-modal-flex .probootstrap-modal-content {
     width: 60%;
     padding: 40px;
-    position: relative;
+    position: relative
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px) {
+    .modal .modal-content .close {
+        top: 20px;
+        right: 20px
+    }
+
+    .modal .probootstrap-modal-flex .probootstrap-modal-figure {
+        height: 200px
+    }
+
     .modal .probootstrap-modal-flex .probootstrap-modal-content {
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 15px
     }
-}
 
-@media screen and (max-width: 480px) {
+    .modal .probootstrap-modal-flex .probootstrap-modal-content,
+    .modal .probootstrap-modal-flex .probootstrap-modal-figure {
+        width: 100%
+    }
 
-    .modal .probootstrap-modal-flex .probootstrap-modal-figure,
-    .modal .probootstrap-modal-flex .probootstrap-modal-content {
-        width: 100%;
+    .modal .probootstrap-modal-flex .btn {
+        margin-bottom: 10px
     }
 }
 
 .modal .probootstrap-modal-flex .form-control {
-    height: 40px;
-}
-
-@media screen and (max-width: 480px) {
-    .modal .probootstrap-modal-flex .btn {
-        margin-bottom: 10px;
-    }
+    height: 40px
 }
 
 .modal .probootstrap-modal-flex .probootstrap-remember {
-    float: left;
+    float: left
 }
 
 .modal .probootstrap-modal-flex .probootstrap-forgot {
-    float: right;
-}
-
-@media screen and (max-width: 480px) {
-    .modal .probootstrap-modal-flex .probootstrap-forgot {
-        float: left;
-    }
+    float: right
 }
 
 .modal .probootstrap-modal-flex .form-group {
-    position: relative;
+    position: relative
 }
 
 .modal .probootstrap-modal-flex .probootstrap-or {
@@ -1560,11 +1489,11 @@ section[data-section="menu"] {
     text-align: center;
     display: block;
     font-size: 11px;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 .modal .probootstrap-modal-flex .probootstrap-or > span {
-    display: block;
+    display: block
 }
 
 .modal .probootstrap-modal-flex .probootstrap-or > span:before {
@@ -1575,111 +1504,101 @@ section[data-section="menu"] {
     background: #ccc;
     width: 100%;
     content: "";
-    position: absolute;
+    position: absolute
 }
 
 .modal .probootstrap-modal-flex .probootstrap-or em {
     color: #ccc;
     display: inline-block;
-    background: #ffffff;
+    background: #fff;
     position: relative;
     z-index: 2;
     padding: 0 4px;
-    font-style: normal;
+    font-style: normal
 }
 
 .modal .probootstrap-modal-flex .btn-connect-facebook {
     background: #3b5998;
     border-color: #3b5998;
-    color: #ffffff;
+    color: #fff
 }
 
 .modal .probootstrap-modal-flex .btn-connect-twitter {
     background: #1da1f2;
     border-color: #1da1f2;
-    color: #ffffff;
+    color: #fff
 }
 
 .modal .probootstrap-modal-flex .btn-connect-google {
     background: #ea4335;
     border-color: #ea4335;
-    color: #ffffff;
+    color: #fff
 }
 
 .modal .vertical-alignment-helper {
     display: table;
     height: 100%;
     width: 100%;
-    pointer-events: none;
-    /* This makes sure that we can still click outside of the modal to close it */
+    pointer-events: none
 }
 
 .modal .vertical-align-center {
-    /* To center vertically */
     display: table-cell;
     vertical-align: middle;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .modal .modal-content {
-    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
     width: inherit;
     height: inherit;
-    /* To center horizontally */
     margin: 0 auto;
-    pointer-events: all;
+    pointer-events: all
 }
 
 .probootstrap-contact-info {
     padding: 0;
-    margin: 0 0 30px 0;
+    margin: 0 0 30px
 }
 
 .probootstrap-contact-info li {
     padding: 0;
-    margin: 20px 0 15px 0;
+    margin: 20px 0 15px;
     list-style: none;
-    line-height: 24px;
+    line-height: 24px
+}
+
+.proboostrap-clients .client-logo,
+.probootstrap-team {
+    margin-bottom: 30px
 }
 
 .probootstrap-contact-info li > i,
 .probootstrap-contact-info li > span {
     vertical-align: top;
-    display: table-cell;
+    display: table-cell
 }
 
 .probootstrap-contact-info li > i {
     font-size: 20px;
     position: relative;
     top: 2px;
-    width: 30px;
+    width: 30px
 }
 
 .probootstrap-team {
-    margin-bottom: 30px;
     float: left;
     display: block;
     position: relative;
     overflow: hidden;
     z-index: 2;
-    border-radius: 6px;
-}
-
-@media screen and (max-width: 480px) {
-    .probootstrap-team {
-        overflow: visible;
-    }
-
-    .probootstrap-team img {
-        max-width: 100%;
-    }
+    border-radius: 6px
 }
 
 .probootstrap-team img {
     -webkit-transition: .3s all;
     transition: .3s all;
-    -webkit-transition-timing-function: cubic-bezier(0.57, 0.21, 0.69, 1.25);
-    transition-timing-function: cubic-bezier(0.57, 0.21, 0.69, 1.25);
+    -webkit-transition-timing-function: cubic-bezier(.57, .21, .69, 1.25);
+    transition-timing-function: cubic-bezier(.57, .21, .69, 1.25)
 }
 
 .probootstrap-team .probootstrap-team-info {
@@ -1692,45 +1611,60 @@ section[data-section="menu"] {
     transform: translateY(-50%);
     -webkit-transition: .3s all;
     transition: .3s all;
-    -webkit-transition-timing-function: cubic-bezier(0.57, 0.21, 0.69, 1.25);
-    transition-timing-function: cubic-bezier(0.57, 0.21, 0.69, 1.25);
+    -webkit-transition-timing-function: cubic-bezier(.57, .21, .69, 1.25);
+    transition-timing-function: cubic-bezier(.57, .21, .69, 1.25);
     text-align: center;
     margin-top: 20px;
     z-index: 3;
-    display: block;
+    display: block
 }
 
-@media screen and (max-width: 480px) {
+.probootstrap-team .probootstrap-team-info h3 {
+    color: #fff
+}
+
+.probootstrap-team .probootstrap-team-info h3 .position {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .4)
+}
+
+@media screen and (max-width:480px) {
+    .modal .probootstrap-modal-flex .probootstrap-forgot {
+        float: left
+    }
+
+    .probootstrap-team {
+        overflow: visible
+    }
+
+    .probootstrap-team img {
+        max-width: 100%
+    }
+
     .probootstrap-team .probootstrap-team-info {
         position: relative;
         top: inherit !important;
         margin-top: 0 !important;
         visibility: visible;
         opacity: 1;
-        -webkit-transform: translateY(0%);
-        transform: translateY(0%);
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
     }
-}
 
-.probootstrap-team .probootstrap-team-info h3 {
-    color: white;
-}
-
-.probootstrap-team .probootstrap-team-info h3 .position {
-    display: block;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.4);
-}
-
-@media screen and (max-width: 480px) {
     .probootstrap-team .probootstrap-team-info h3 {
-        color: rgba(0, 0, 0, 0.7);
+        color: rgba(0, 0, 0, .7)
     }
 
     .probootstrap-team .probootstrap-team-info h3 .position {
         display: block;
         font-size: 14px;
-        color: rgba(0, 0, 0, 0.4);
+        color: rgba(0, 0, 0, .4)
+    }
+
+    .probootstrap-team:focus:before,
+    .probootstrap-team:hover:before {
+        display: none
     }
 }
 
@@ -1743,91 +1677,80 @@ section[data-section="menu"] {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, .8);
     -webkit-transition: .3s all;
     transition: .3s all;
     z-index: 1;
-    border-radius: 5px;
+    border-radius: 5px
 }
 
-.probootstrap-team:hover img,
-.probootstrap-team:focus img {
+.flexslider,
+.probootstrap-pricing,
+.probootstrap-pricing-wrap {
+    position: relative
+}
+
+.probootstrap-team:focus img,
+.probootstrap-team:hover img {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: scale(1.1)
 }
 
-.probootstrap-team:hover:before,
-.probootstrap-team:focus:before {
+.probootstrap-team:focus:before,
+.probootstrap-team:hover:before {
     visibility: visible;
-    opacity: 1;
+    opacity: 1
 }
 
-@media screen and (max-width: 480px) {
-
-    .probootstrap-team:hover:before,
-    .probootstrap-team:focus:before {
-        display: none;
-    }
-}
-
-.probootstrap-team:hover .probootstrap-team-info,
-.probootstrap-team:focus .probootstrap-team-info {
+.probootstrap-team:focus .probootstrap-team-info,
+.probootstrap-team:hover .probootstrap-team-info {
     opacity: 1;
     visibility: visible;
-    margin-top: 0px;
+    margin-top: 0
 }
 
 .probootstrap-flex-section {
-    padding: 7em 0;
+    padding: 7em 0
 }
 
 .probootstrap-flex-section.probootstrap-bg-white {
-    background: #ffffff;
+    background: #fff
 }
 
-.proboostrap-clients .client-logo {
-    margin-bottom: 30px;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .proboostrap-clients .client-logo {
-        margin-bottom: 30px;
+        margin-bottom: 30px
     }
 }
 
-.probootstrap-pricing-wrap {
-    position: relative;
-}
-
 .probootstrap-pricing {
-    background: #ffffff;
+    background: #fff;
     float: left;
     width: 100%;
     padding: 20px;
     text-align: center;
-    position: relative;
-    -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.08);
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, .08);
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, .08);
     z-index: 2;
-    margin-top: -200px;
+    margin-top: -200px
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width:992px) {
     .probootstrap-pricing {
         margin-top: 0 !important;
-        margin-bottom: 30px;
+        margin-bottom: 30px
     }
 }
 
 .probootstrap-pricing.popular {
     z-index: 10;
     margin-top: -215px;
-    padding-top: 40px;
+    padding-top: 40px
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width:992px) {
     .probootstrap-pricing.popular {
-        margin-top: 0 !important;
+        margin-top: 0 !important
     }
 }
 
@@ -1835,7 +1758,7 @@ section[data-section="menu"] {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: .1em;
-    margin-bottom: 50px;
+    margin-bottom: 50px
 }
 
 .probootstrap-pricing h3 > span {
@@ -1844,11 +1767,11 @@ section[data-section="menu"] {
     text-transform: none;
     letter-spacing: normal;
     color: #FFA33E;
-    font-size: 14px;
+    font-size: 14px
 }
 
 .probootstrap-pricing .probootstrap-price-wrap {
-    margin-bottom: 50px;
+    margin-bottom: 50px
 }
 
 .probootstrap-pricing .probootstrap-price-wrap .probootstrap-price {
@@ -1856,94 +1779,84 @@ section[data-section="menu"] {
     color: #FFA33E;
     font-weight: 100;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .probootstrap-pricing .probootstrap-price-wrap .probootstrap-price-per-month {
-    font-size: 13px;
+    font-size: 13px
 }
 
 .probootstrap-pricing ul {
     padding: 0 30px;
-    margin: 0 0 50px 0;
+    margin: 0 0 50px
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px) {
     .probootstrap-pricing ul {
-        padding: 0 10px;
+        padding: 0 10px
     }
 }
 
 .probootstrap-pricing ul li {
     padding: 0;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
     line-height: 24px;
-    list-style: none;
+    list-style: none
 }
 
 .probootstrap-testimony-wrap {
     border-radius: 4px;
-    padding: 20px;
+    padding: 20px
 }
 
 .probootstrap-testimony-wrap figure {
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .probootstrap-testimony-wrap figure img {
     height: 80px;
     width: 80px !important;
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 50%
 }
 
 .probootstrap-testimony-wrap blockquote {
     border-left: none;
     padding: 0;
     margin-bottom: 0;
-    color: #000000;
+    color: #000
 }
 
 .probootstrap-testimony-wrap blockquote cite {
     margin-top: 30px;
     display: block;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, .3)
 }
 
 .probootstrap-testimony-wrap blockquote cite span {
     font-style: normal;
-    color: #000000;
-    font-weight: bold;
+    color: #000;
+    font-weight: 700
 }
 
 .owl-carousel-testimony .item {
     padding-bottom: 40px;
-    padding-top: 20px;
+    padding-top: 20px
 }
 
 .owl-carousel-testimony .probootstrap-testimony-wrap {
     border: 1px solid #f2f2f2;
     max-width: 700px;
     margin: 0 auto;
-    -webkit-box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.09);
-    box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, .09);
+    box-shadow: 0 2px 17px 0 rgba(0, 0, 0, .09)
 }
 
-/* Flexslider override style */
-.slider-height,
 .flexslider,
-.flexslider .slides > li {
-    height: 750px;
-}
-
-@media screen and (max-width: 480px) {
-
-    .slider-height,
-    .flexslider,
-    .flexslider .slides > li {
-        height: 400px;
-    }
+.flexslider .slides > li,
+.slider-height {
+    height: 750px
 }
 
 .probootstrap-heading .primary-heading {
@@ -1951,18 +1864,18 @@ section[data-section="menu"] {
     color: #FFA33E;
     margin: 0;
     padding: 0;
-    font-size: 80px;
+    font-size: 80px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .probootstrap-heading .primary-heading {
-        font-size: 70px;
+        font-size: 70px
     }
 }
 
 .probootstrap-heading .secondary-heading {
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fff;
     margin: 0;
     padding: 0;
     letter-spacing: .05em;
@@ -1970,79 +1883,83 @@ section[data-section="menu"] {
     position: relative;
     top: -50px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 40px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .probootstrap-heading .secondary-heading {
-        font-size: 40px;
+        font-size: 40px
     }
 }
 
 .probootstrap-heading.dark .secondary-heading {
-    color: #000000;
+    color: #000
 }
 
 .probootstrap-heading .seperator {
     display: block;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 10px;
     color: #ccc;
-    font-weight: 300;
+    font-weight: 300
 }
 
 .flexslider {
-    position: relative;
     z-index: 2;
-    background: none;
+    background: 0 0;
     border: none;
-    margin: 0 0 0;
+    margin: 0
 }
 
 .flexslider .probootstrap-slider-text {
-    margin-top: 300px;
+    margin-top: 300px
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px) {
+
+    .flexslider,
+    .flexslider .slides > li,
+    .slider-height {
+        height: 400px
+    }
+
     .flexslider .probootstrap-slider-text {
-        margin-top: 150px;
+        margin-top: 150px
+    }
+
+    .flexslider .flex-direction-nav {
+        display: none
     }
 }
 
 .flexslider .probootstrap-slider-text .sub-heading {
     font-size: 20px;
     margin-top: -40px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, .7)
 }
 
 .flexslider .probootstrap-slider-text .sub-heading a {
-    color: white;
+    color: #fff
 }
 
 .flexslider .slides > li {
     background-size: cover;
-    background-repeat: none;
+    background-repeat: none
 }
 
 .flexslider .slides > li.overlay:before {
     content: "";
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, .2);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0
 }
 
 .flexslider .flex-control-paging {
     position: absolute;
     bottom: 30px;
-    z-index: 20;
-}
-
-@media screen and (max-width: 480px) {
-    .flexslider .flex-direction-nav {
-        display: none;
-    }
+    z-index: 20
 }
 
 .flexslider .flex-direction-nav a {
@@ -2057,24 +1974,29 @@ section[data-section="menu"] {
     overflow: hidden;
     opacity: 0;
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.8);
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 0px;
-    padding: 30px;
+    color: rgba(0, 0, 0, .8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .3);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 0;
+    padding: 30px
+}
+
+.mt0,
+.owl-carousel .owl-controls,
+.owl-carousel-posts .owl-controls {
+    margin-top: 0
 }
 
 .flexslider .flex-direction-nav a:before {
-    font-family: 'icomoon';
+    font-family: icomoon;
     speak: none;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: absolute;
@@ -2083,11 +2005,11 @@ section[data-section="menu"] {
     transition: .3s all;
     font-size: 30px;
     display: inline-block;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, .8);
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
 }
 
 .flexslider .flex-direction-nav a.flex-next:before {
@@ -2095,37 +2017,37 @@ section[data-section="menu"] {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
 }
 
 .flex-direction-nav .flex-prev {
-    left: 0px;
+    left: 0
 }
 
 .flex-direction-nav .flex-next {
-    right: 0px;
-    text-align: right;
+    right: 0;
+    text-align: right
 }
 
 .flexslider:hover .flex-direction-nav .flex-prev {
-    opacity: 0.7;
-    left: 0px;
+    opacity: .7;
+    left: 0
 }
 
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
-    opacity: 1;
+    opacity: 1
 }
 
 .flexslider:hover .flex-direction-nav .flex-next {
-    opacity: 0.7;
-    right: 0px;
+    opacity: .7;
+    right: 0
 }
 
 .flex-control-paging li a {
     width: 10px;
     height: 10px;
     display: block;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, .2);
     cursor: pointer;
     text-indent: -9999px;
     -webkit-box-shadow: none;
@@ -2133,34 +2055,27 @@ section[data-section="menu"] {
     box-shadow: none;
     border-radius: 50%;
     -webkit-transition: .3s all;
-    transition: .3s all;
+    transition: .3s all
 }
 
 .flex-control-paging li a:hover {
     background: #333;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, .7)
 }
 
 .flex-control-paging li a.flex-active {
-    background: #000;
-    background: white;
-    cursor: default;
+    background: #fff;
+    cursor: default
 }
 
-/* Owl carousel override style */
 .owl-carousel {
-    margin-bottom: 100px;
+    margin-bottom: 100px
 }
 
 .owl-carousel.border-rounded .item {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 4px;
-    overflow: hidden;
-}
-
-.owl-carousel .owl-controls,
-.owl-carousel-posts .owl-controls {
-    margin-top: 0;
+    overflow: hidden
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-next,
@@ -2173,244 +2088,223 @@ section[data-section="menu"] {
     z-index: 9999;
     position: absolute;
     -webkit-transition: .2s all;
-    transition: .2s all;
+    transition: .2s all
 }
 
 .owl-carousel-posts .owl-controls .owl-nav .owl-next,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-    top: 24%;
+    top: 24%
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-next,
 .owl-carousel-posts .owl-controls .owl-nav .owl-next {
-    right: 20px;
+    right: 20px
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-    left: 20px;
+    left: 20px
 }
 
-.owl-carousel-posts .owl-controls .owl-nav .owl-next i,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev i,
 .owl-carousel-fullwidth .owl-controls .owl-nav .owl-next i,
-.owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev i {
-    color: #000000;
-}
-
-.owl-carousel-posts .owl-controls .owl-nav .owl-next:hover i,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover i,
 .owl-carousel-fullwidth .owl-controls .owl-nav .owl-next:hover i,
-.owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev:hover i {
-    color: #000000;
+.owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev i,
+.owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev:hover i,
+.owl-carousel-posts .owl-controls .owl-nav .owl-next i,
+.owl-carousel-posts .owl-controls .owl-nav .owl-next:hover i,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev i,
+.owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover i {
+    color: #000
 }
 
 .owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-next i,
-.owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-prev i {
-    color: #ffffff;
-}
-
 .owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-next:hover i,
+.owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-prev i,
 .owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-prev:hover i {
-    color: #ffffff;
+    color: #fff
 }
 
-@media screen and (max-width: 768px) {
-    .owl-theme .owl-controls .owl-nav {
-        display: none;
-    }
+.owl-theme .owl-controls .owl-nav [class*=owl-] {
+    background: 0 0 !important
 }
 
-.owl-theme .owl-controls .owl-nav [class*="owl-"] {
-    background: none !important;
-}
-
-.owl-theme .owl-controls .owl-nav [class*="owl-"] i {
+.owl-theme .owl-controls .owl-nav [class*=owl-] i {
     font-size: 24px;
     background: #ffa33e !important;
     padding: 12px;
     -webkit-transition: .5s all;
-    transition: .5s all;
+    transition: .5s all
 }
 
-.owl-theme .owl-controls .owl-nav [class*="owl-"]:hover i,
-.owl-theme .owl-controls .owl-nav [class*="owl-"]:focus i {
-    background: #ffa33e !important;
+.owl-theme .owl-controls .owl-nav [class*=owl-]:focus i,
+.owl-theme .owl-controls .owl-nav [class*=owl-]:hover i {
+    background: #ffa33e !important
 }
 
 .owl-theme .owl-dots {
     position: absolute;
     bottom: -30px;
     width: 100%;
-    text-align: center;
+    text-align: center
 }
 
-.owl-carousel-fullwidth.owl-theme .owl-dots {
-    bottom: -30px;
-    margin-bottom: -2.5em;
-}
-
+.owl-carousel-fullwidth.owl-theme .owl-dots,
 .owl-work.owl-theme .owl-dots {
     bottom: -30px;
-    margin-bottom: -2.5em;
+    margin-bottom: -2.5em
 }
 
 .owl-theme .owl-dots .owl-dot span {
     width: 8px;
     height: 8px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, .2);
     -webkit-transition: .2s all;
     transition: .2s all;
-    border: 2px solid transparent;
+    border: 2px solid transparent
 }
 
 .owl-theme .owl-dots .owl-dot span:hover {
-    background: none;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: 0 0;
+    border: 2px solid rgba(0, 0, 0, .2)
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: none;
-    border: 2px solid #000000;
+    background: 0 0;
+    border: 2px solid #000
 }
 
-.probootstrap-gutter0 > div[class*='col-'] {
-    padding-right: 0px;
-    padding-left: 0px;
+.probootstrap-gutter0 > div[class*=col-] {
+    padding-right: 0;
+    padding-left: 0
 }
 
-@media screen and (max-width: 480px) {
-    .probootstrap-gutter0 > div[class*='col-'] {
+@media screen and (max-width:480px) {
+    .probootstrap-gutter0 > div[class*=col-] {
         padding-right: 15px;
-        padding-left: 15px;
+        padding-left: 15px
     }
 }
 
-.probootstrap-gutter40 > div[class*='col-'] {
+.probootstrap-gutter40 > div[class*=col-] {
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 20px
 }
 
-@media screen and (max-width: 480px) {
-    .probootstrap-gutter40 > div[class*='col-'] {
+@media screen and (max-width:480px) {
+    .probootstrap-gutter40 > div[class*=col-] {
         padding-right: 15px;
-        padding-left: 15px;
+        padding-left: 15px
     }
 }
 
-.probootstrap-gutter60 > div[class*='col-'] {
+.probootstrap-gutter60 > div[class*=col-] {
     padding-right: 30px;
-    padding-left: 30px;
+    padding-left: 30px
 }
 
-@media screen and (max-width: 480px) {
-    .probootstrap-gutter60 > div[class*='col-'] {
+@media screen and (max-width:480px) {
+    .probootstrap-gutter60 > div[class*=col-] {
         padding-right: 15px;
-        padding-left: 15px;
+        padding-left: 15px
     }
 }
 
 .mb0 {
-    margin-bottom: 0px;
+    margin-bottom: 0
 }
 
 .mb10 {
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .mb20 {
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .mb30 {
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 
 .mb40 {
-    margin-bottom: 40px;
+    margin-bottom: 40px
 }
 
 .mb50 {
-    margin-bottom: 50px;
+    margin-bottom: 50px
 }
 
 .mb60 {
-    margin-bottom: 60px;
+    margin-bottom: 60px
 }
 
 .mb70 {
-    margin-bottom: 70px;
+    margin-bottom: 70px
 }
 
 .mb80 {
-    margin-bottom: 80px;
+    margin-bottom: 80px
 }
 
 .mb90 {
-    margin-bottom: 90px;
+    margin-bottom: 90px
 }
 
 .mb100 {
-    margin-bottom: 100px;
-}
-
-.mt0 {
-    margin-top: 0px;
+    margin-bottom: 100px
 }
 
 .mt10 {
-    margin-top: 10px;
+    margin-top: 10px
 }
 
 .mt20 {
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .mt30 {
-    margin-top: 30px;
+    margin-top: 30px
 }
 
 .mt40 {
-    margin-top: 40px;
+    margin-top: 40px
 }
 
 .mt50 {
-    margin-top: 50px;
+    margin-top: 50px
 }
 
 .mt60 {
-    margin-top: 60px;
+    margin-top: 60px
 }
 
 .mt70 {
-    margin-top: 70px;
+    margin-top: 70px
 }
 
 .mt80 {
-    margin-top: 80px;
+    margin-top: 80px
 }
 
 .mt90 {
-    margin-top: 90px;
+    margin-top: 90px
 }
 
 .mt100 {
-    margin-top: 100px;
+    margin-top: 100px
 }
 
 .pb0 {
-    padding-bottom: 0 !important;
+    padding-bottom: 0 !important
 }
 
-@media screen and (max-width: 768px) {
-    .img-sm-responsive {
-        max-width: 100%;
+@media screen and (max-width:768px) {
+    .owl-theme .owl-controls .owl-nav {
+        display: none
     }
-}
 
-@media screen and (max-width: 768px) {
+    .img-sm-responsive,
     .img-xs-responsive {
-        max-width: 100%;
+        max-width: 100%
     }
 }
